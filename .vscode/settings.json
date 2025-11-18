@@ -66,5 +66,6 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
+    "CST320FoodFiles.sln=======dotnet.defaultSolution": "Supermarket-Scene.sln>>>>>>>df2bf1bca61bc7a5c6d0219b26380ab2f107e451",
     "dotnet.defaultSolution": "CST320FoodFiles.sln"
 }
