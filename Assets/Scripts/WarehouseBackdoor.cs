@@ -11,6 +11,8 @@ public class WarehouseBackdoor : MonoBehaviour
     private Quaternion startRotation;
     private Quaternion targetRotation;
 
+    public GameObject exitPortalObject; // <--- NEW REFERENCE
+
     void Start()
     {
         startRotation = transform.rotation;
@@ -48,6 +50,13 @@ public class WarehouseBackdoor : MonoBehaviour
         if (doorCollider != null)
         {
             doorCollider.enabled = false;
+        }
+
+        // 3. ACTIVATE THE EXIT PORTAL
+        if (exitPortalObject != null)
+        {
+            exitPortalObject.SetActive(true);
+            Debug.Log("Office Return Portal is now available!");
         }
     }
 
